@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Booking - SkyBook</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">✈ SkyBook</div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="flights.html">Flights</a>
+        <a href="booking.html">My Booking</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<section class="page">
+
+    <h1>Passenger Details</h1>
+
+    <div class="booking-form">
+
+        <label>Full Name</label>
+        <input type="text" placeholder="Enter your name">
+
+        <label>Email</label>
+        <input type="email" placeholder="Enter your email">
+
+        <label>Phone Number</label>
+        <input type="tel" placeholder="Enter phone number">
+
+        <label>Passport / ID Number</label>
+        <input type="text" placeholder="Enter ID number">
+
+        <label>Seat Preference</label>
+
+        <select>
+            <option>Window</option>
+            <option>Middle</option>
+            <option>Aisle</option>
+        </select>
+
+        <button onclick="confirmBooking()">Confirm Booking</button>
+
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2026 SkyBook Flight Booking</p>
+</footer>
+
+<script>
+function confirmBooking() {
+    alert("Booking confirmed successfully!");
+}
+</script>
+
+</body>
+</html>

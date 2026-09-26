@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyBook - Flight Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">✈ SkyBook</div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="flights.html">Flights</a>
+        <a href="booking.html">My Booking</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+
+    <div class="hero-content">
+        <h1>Book Your Next Flight</h1>
+        <p>Search flights and plan your journey with SkyBook.</p>
+    </div>
+
+    <div class="search-box">
+
+        <div class="trip-type">
+            <label>
+                <input type="radio" name="trip" checked>
+                Round Trip
+            </label>
+
+            <label>
+                <input type="radio" name="trip">
+                One Way
+            </label>
+        </div>
+
+        <div class="search-fields">
+
+            <div>
+                <label>From</label>
+                <input type="text" placeholder="Departure city">
+            </div>
+
+            <div>
+                <label>To</label>
+                <input type="text" placeholder="Destination city">
+            </div>
+
+            <div>
+                <label>Departure</label>
+                <input type="date">
+            </div>
+
+            <div>
+                <label>Passengers</label>
+                <select>
+                    <option>1 Passenger</option>
+                    <option>2 Passengers</option>
+                    <option>3 Passengers</option>
+                    <option>4 Passengers</option>
+                    <option>5 Passengers</option>
+                </select>
+            </div>
+
+            <button onclick="searchFlights()">Search Flights</button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="popular">
+
+    <h2>Popular Destinations</h2>
+
+    <div class="destination-container">
+
+        <div class="destination">
+            <h3>Hyderabad</h3>
+            <p>From ₹2,499</p>
+        </div>
+
+        <div class="destination">
+            <h3>Delhi</h3>
+            <p>From ₹3,299</p>
+        </div>
+
+        <div class="destination">
+            <h3>Mumbai</h3>
+            <p>From ₹2,799</p>
+        </div>
+
+        <div class="destination">
+            <h3>Bangalore</h3>
+            <p>From ₹2,199</p>
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2026 SkyBook Flight Booking</p>
+</footer>
+
+<script>
+function searchFlights() {
+    alert("Searching for available flights...");
+    window.location.href = "flights.html";
+}
+</script>
+
+</body>
+</html>

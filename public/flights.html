@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Available Flights - SkyBook</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">✈ SkyBook</div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="flights.html">Flights</a>
+        <a href="booking.html">My Booking</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<section class="page">
+
+    <h1>Available Flights</h1>
+    <p>Select a flight to continue your booking.</p>
+
+    <div class="flight-card">
+
+        <div>
+            <h2>IndiGo</h2>
+            <p>6E 2345</p>
+        </div>
+
+        <div>
+            <strong>Vijayawada</strong>
+            <p>08:30 AM</p>
+        </div>
+
+        <div>
+            <strong>Hyderabad</strong>
+            <p>09:45 AM</p>
+        </div>
+
+        <div>
+            <h3>₹3,499</h3>
+            <button onclick="bookFlight()">Book Now</button>
+        </div>
+
+    </div>
+
+    <div class="flight-card">
+
+        <div>
+            <h2>Air India</h2>
+            <p>AI 678</p>
+        </div>
+
+        <div>
+            <strong>Vijayawada</strong>
+            <p>11:00 AM</p>
+        </div>
+
+        <div>
+            <strong>Delhi</strong>
+            <p>01:40 PM</p>
+        </div>
+
+        <div>
+            <h3>₹5,299</h3>
+            <button onclick="bookFlight()">Book Now</button>
+        </div>
+
+    </div>
+
+    <div class="flight-card">
+
+        <div>
+            <h2>Akasa Air</h2>
+            <p>QP 1456</p>
+        </div>
+
+        <div>
+            <strong>Hyderabad</strong>
+            <p>03:20 PM</p>
+        </div>
+
+        <div>
+            <strong>Mumbai</strong>
+            <p>05:00 PM</p>
+        </div>
+
+        <div>
+            <h3>₹4,199</h3>
+            <button onclick="bookFlight()">Book Now</button>
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2026 SkyBook Flight Booking</p>
+</footer>
+
+<script>
+function bookFlight() {
+    window.location.href = "booking.html";
+}
+</script>
+
+</body>
+</html>
